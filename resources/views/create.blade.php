@@ -19,7 +19,7 @@
             <input type="text" name="name" class="form-control">
             <div>
                 @error('name')
-                   <span class="text-danger">{{$message}}</span> 
+                   <span class="text-danger bg-danger">{{$message}}</span> 
                 @enderror
             </div>
         </div>

@@ -15,6 +15,10 @@ class EmployeeController extends Controller
     public function create(){
         return view('create');
     }
+    public function view(){
+        $employees=Employee::orderBy('created_at','asc')->paginate(10);
+        return view('index',compact('employees'));
+    }
     
     
     public function edit($id){

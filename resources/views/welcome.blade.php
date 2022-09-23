@@ -16,50 +16,13 @@
         
     </head>
     <body>
-        <div class="container">
-            <h1 class="text-center">Employees 
-                <a href="/create" class="btn btn-outline-primary">add </a>  </h1>
-             <section class="success">
-              <p class="text-success">{{session('msg')}}</p>
-             </section>
-            <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">id</th>
-                    <th scope="col">name</th>
-                    <th scope="col">email</th>
-                    <th scope="col">salary</th>
-                    <th scope="col">action</th>
-                  </tr>
-                </thead>
-                @foreach ($employees as $emp)
-                <tbody>
-                 
-                    <tr>
-                      <th scope="row">{{$emp->id}}</th>
-                      <td>{{$emp->name}}</td>
-                      <td>{{$emp->email}}</td>
-                      <td>{{$emp->salary}}</td>
-                      <td>
-           <a class="btn btn-danger"   
-           href="/delete/{{$emp->id}}">
-            delete
-           </a>
-           <a class="btn btn-primary"   
-           href="/edit/{{$emp->id}}">
-            edit
-           </a>
-                    </td>
-                    </tr>
-                    
-                  </tbody>
-                  @endforeach
-                
-              </table>
-              <section class="my-5">
-                {{$employees->links()}}
-              </section>
-        </div>
-        
+       @extends('layouts.app')
+      @section('content')
+         <div class="d-flex justify-content-center">
+         <a href="{{route('view')}}" class="btn align-items-center btn-success">
+        View Employee
+        </a>  
+        </div> 
+      @endsection
     </body>
 </html>
