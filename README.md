@@ -2,11 +2,17 @@
 
 <div align="center">
 
+
+
+
+https://user-images.githubusercontent.com/98971567/191991252-ec2a6350-e21d-4017-9e1e-70072629ae36.mp4
+
+
  
-<img src="/readme_images/add.png" width="800" height="500"> 
-<img src="/readme_images/create.png" width="800" height="500">
-<img src="/readme_images/search.png" width="800" height="500">
-<img src="/readme_images/view.png" width="800" height="500">
+<img src="/readme_images/add.png" width="800" height="300"> 
+<img src="/readme_images/create.png" width="800" height="300">
+<img src="/readme_images/search.png" width="800" height="300">
+<img src="/readme_images/view.png" width="800" height="300">
 
 
 </div>
