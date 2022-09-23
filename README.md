@@ -3,8 +3,8 @@
 <div align="center">
 
  
-<img src="/readme_images/add.png" width="300">
-<img src="/readme_images/create.png" width="300">
+<img src="/readme_images/add.png" width="800" height="500"> 
+<img src="/readme_images/create.png" width="800" height="500">
 
 
 
