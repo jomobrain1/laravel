@@ -62,5 +62,19 @@ class EmployeeController extends Controller
       return back()->with("msg","post deleted");
     }
 
+    public function search(Request $request){
+        // Get the search value from the request
+        $search = $request->input('search');
+    
+        // Search in the title and body columns from the posts table
+        $employees = Employee::query()
+            ->where('name', 'LIKE', "%{$search}%")
+            ->orWhere('email', 'LIKE', "%{$search}%")
+            ->get();
+    
+        // Return the search view with the resluts compacted
+        return view('search', compact('employees'));
+    }
+
 
 }

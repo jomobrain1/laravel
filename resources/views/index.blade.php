@@ -22,6 +22,10 @@
              <section class="success">
               <p class="text-success">{{session('msg')}}</p>
              </section>
+             <form action="{{ route('search') }}" method="GET">
+              <input type="text" name="search" required/>
+              <button type="submit">Search</button>
+            </form>
             <table class="table table-striped">
                 <thead>
                   <tr>
